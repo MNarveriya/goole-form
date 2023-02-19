@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="left">
+        <div class="g_form">
+          <img src="https://www.logo.wine/a/logo/Google/Google-Logo.wine.svg" alt="loding... image" width="70">
+          <h3>Create your Google Account</h3>
+          <form action="">
+            <input type="text" name="" id="" placeholder="firstname" autocomplete="off" minlength="3" required>
+            <input type="text" name="" id="" placeholder="lastname" autocomplete="off" minlength="3" required>
+            <div id="uname">
+              <input type="email" name="" id="" placeholder="email" autocomplete="off" minlength="3" required>
+              <label for="">@gmail.com</label>
+            </div>
+            <span>
+              you can use letter,number & periods
+            </span>
+            <br>
+            <a href="#">use my current email address instead</a>
+            <input type="password" name="" id="pwrd" placeholder="password" autocomplete="off" minlength="3" required>
+            <input type="password" name="" id="cpwrd" placeholder="confirm password" autocomplete="off" minlength="3" required>
+
+            <span>
+              Use 8 or more characters with a mix of letters, numbers & symbols
+            </span>
+            <br>
+            <input type="checkbox" name="" id="" class="checkbox" onclick="show()">
+            &nbsp;Show Password
+            <div class="b_link">
+              <a href="#">Sign in instead</a>
+              <input type="submit" id="next" value="Next">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="right">
+        <img src="https://www.logo.wine/a/logo/Google_Account/Google_Account-Logo.wine.svg" alt="loding...image">
+        <p> One account. All of Google working for you.</p>
+      </div>
+    </div>
+  </header>
+
+  <script src="">
+    function show() {
+      var pwrd = document.getElementById("pwrd");
+      var cpwrd = document.getElementById("cpwrd");
+      if (pwrd.type === "password" && cpwrd.type === "password") {
+        pwrd.type = "text";
+        cpwrd.type = "text";
+      } else {
+        pwrd.type = "password";
+        cpwrd.type = "password";
+      }
+    }
+  </script>
+</body>
+
+</html>
